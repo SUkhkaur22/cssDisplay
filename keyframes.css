@@ -1,0 +1,22 @@
+
+@keyframes jump {
+    0%,
+    100% {
+      background-color: aqua;
+    }
+    50% {
+      background-color: pink;
+    }
+  }
+  
+  @keyframes rotate {
+    0%,
+    100% {
+      transform: rotateZ(90deg);
+    }
+  
+    50% {
+      transform: rotateZ(270deg);
+    }
+  }
+  

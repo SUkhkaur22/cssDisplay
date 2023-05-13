@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.windows {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.window {
+  /* border: 1px solid black; */
+  width: 325px;
+  height: 300px;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+}
+
+.window .title {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+}
+
+.one,
+.three {
+  animation: jump 1s infinite;
+}
+
+.two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.two img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  height: 100px;
+  width: 100px;
+}
+
+.two .circle {
+  position: relative;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid black;
+  animation: rotate 1s infinite;
+}
+
+.two .circle .small-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/* FOUR */
+
+.four {
+  padding-top: 20px;
+}
+
+.four .dial {
+  height: 180px;
+  width: 180px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.four .dial .numbers {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-weight: bold;
+}
+
+.vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+.horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(19, 55, 166);
+}
+
+.hand {
+  position: absolute;
+  width: 4px;
+  border-radius: 5px;
+  background-color: rgb(200, 255, 0);
+  top: 50%;
+  left:50%;
+  transform-origin: bottom;
+}
+
+.hour{
+    transform: translate(-50%,-100%) rotate(0deg);
+    height: 30px;
+}
+.minute{
+    transform: translate(-50%,-100%) rotate(20deg);
+    height: 50px;
+}
+.second{
+    transform: translate(-50%,-100%) rotate(90deg);
+    height: 55px;
+}
